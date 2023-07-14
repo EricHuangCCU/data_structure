@@ -167,7 +167,7 @@ void kruskal(int nodes){
 
 void sorting(){
     edge temp ;
-
+    //泡沫排序bad, qsort會快很多
     for(int i=0 ; i< ed_list.num ; i++){
         for(int j=0 ; j< ed_list.num ; j++){
             if(ed_list.data[j].weight > ed_list.data[j + 1].weight){
